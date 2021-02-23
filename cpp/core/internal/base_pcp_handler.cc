@@ -53,7 +53,7 @@ BasePcpHandler::BasePcpHandler(Mediums* mediums,
       bwu_manager_(bwu_manager) {}
 
 BasePcpHandler::~BasePcpHandler() {
-  NEARBY_LOGS(INFO) << "BasePcpHandler: going down; strategy="
+  NEARBY_LOGS(INFO) << "BasePcpHandler: going TEST CHANGE down; strategy="
                     << strategy_.GetName() << "; handle=" << handle_;
   DisconnectFromEndpointManager();
   // Stop all the ongoing Runnables (as gracefully as possible).
